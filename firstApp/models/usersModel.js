@@ -6,7 +6,7 @@ var bcrypt = require('bcrypt-nodejs');
 require('./util');
 
 var usersSchema = new Schema({
-    user_name: {type: String, default: "anonymous"},
+    user_name: {type: String, default: null},
     password: String,
     fb_id: { type: String, default: null },
     access_token: {type: String, default: ""},

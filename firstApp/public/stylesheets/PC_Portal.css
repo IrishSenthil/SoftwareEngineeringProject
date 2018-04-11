@@ -73,6 +73,23 @@
   width: 200px;
 }
 
+#userRatingLikes {
+  display: inline-block;
+  font-weight: bold;
+  color: #00e600;
+}
+
+#userRatingDislikes {
+  display: inline-block;
+  font-weight: bold;
+  color: #e60000;
+}
+
+.gdbRating {
+  color: gold;
+  display: inline-block;
+}
+
 .buttons {
   float: right;
 }

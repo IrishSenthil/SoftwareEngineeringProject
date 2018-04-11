@@ -13,8 +13,10 @@ $(document).ready(
         var newGameName;
         var gameAlreadyInDB = false;
         var tempGame;
-        var testy = false;
+        var noVotesLeft = false;
+        var userLoggedIn = false;
         getComments();
+        refreshGameValues();
 
         function insertIntoWishlist() {
           for(var i=0; i<5; i++) {
@@ -61,21 +63,41 @@ $(document).ready(
           });
         }
 
+        function refreshGameValues() {
+          $.get("/get_gameValues", function(data) {
+            for(var i = 0; i < data.length; i++) {
+             if(data[i].gameName === "Battlefield 1") {
+               $("#BattlefieldOne #userRatingLikes").html(Math.round(100*((data[i].likes)/(data[i].totalVotes)))+"%");
+               $("#BattlefieldOne #userRatingDislikes").html(Math.round(100*((data[i].dislikes)/(data[i].totalVotes)))+"%");
+             }
+
+             if(data[i].gameName === "Batman: The Enemy Within") {
+               $("#BatmanTheEnemyWithin #userRatingLikes").html(Math.round(100*((data[i].likes)/(data[i].totalVotes)))+"%");
+               $("#BatmanTheEnemyWithin #userRatingDislikes").html(Math.round(100*((data[i].dislikes)/(data[i].totalVotes)))+"%");
+             }
+          }
+          setTimeout(refreshGameValues, 10000);
+          });
+        }
+
         function voteOperations() {
           $.get("/users/get_current_user", function (data) {
             var votes = 5;
             for (var i = 0; i < data.length; i++) {
               votes = data[i].votesRemaining;
-              alert("votes left : "+ votes)
-              if((votes-1)<0) {
+              userLoggedIn = true;
+              alert("votes left : "+ votes);
+
+            if((votes-1)<0) {
               alert("NO VOTES LEFT");
-            } else {
+              noVotesLeft = true;
+            }
+            else if(noVotes == false) {
               $.ajax({
                   url: '/users/updateUserDetails/' + data[i].user_name,
                   type: 'PUT',
                   data: { votesRemaining : votes - 1},
                   success: function (result) {
-                      //getComments();
                   }
               });
             }
@@ -87,27 +109,35 @@ $(document).ready(
         function upVoteGame(name) {
           $.get("/get_gameValues", function(data) {
             var alreadyExist = false;
+            var noVotes = false;
             var games;
-
             games = data;
             for (var i = 0; i < games.length; i++) {
               if (name === games[i].gameName) {
                 alreadyExist = true;
 
+                //here
                 voteOperations();
-
+                alert("noVotesLeft is "+noVotesLeft);
+                alert("userloggedin is "+userLoggedIn);
+                //END
+                if(noVotesLeft == false && userLoggedIn == true) {
                 $.ajax({
                     url: '/editVotes/' + games[i]._id,
                     type: 'PUT',
                     data: { likes : games[i].likes + 1, totalVotes : data[i].totalVotes+1},
                     success: function (result) {
-                      alert(games[i].likes+1)
+                      alert(games[i].likes+1);
+                      //alert("noVotesLeft is "+noVotesLeft);
                     }
                 });
+              }
+                refreshGameValues();
                 break;
               }
             }
 
+           //This is for us Developers!
             if (!alreadyExist) {
               $.post("/add_game_to_dB", {
                 gameName: name
@@ -121,18 +151,30 @@ $(document).ready(
           function downVoteGame(name) {
             $.get("/get_gameValues", function(data) {
               var alreadyExist = false;
+              var noVotes = false;
+              var games;
 
-              for (var i = 0; i < data.length; i++) {
-                if (name === data[i].gameName) {
+              games = data;
+              for (var i = 0; i < games.length; i++) {
+                if (name === games[i].gameName) {
                   alreadyExist = true;
+
+                  //here
+                  voteOperations();
+                  alert("noVotesLeft is "+noVotesLeft);
+                  //END
+                  if(noVotesLeft == false && userLoggedIn == true) {
                   $.ajax({
-                      url: '/editVotes/' + data[i]._id,
+                      url: '/editVotes/' + games[i]._id,
                       type: 'PUT',
-                      data: { dislikes : data[i].dislikes + 1, totalVotes : data[i].totalVotes+1},
+                      data: { dislikes : games[i].dislikes + 1, totalVotes : data[i].totalVotes + 1},
                       success: function (result) {
-                        alert(data[i].dislikes + 1)
+                        alert(games[i].dislikes+1);
+                        //alert("noVotesLeft is "+noVotesLeft);
                       }
                   });
+                }
+                  refreshGameValues();
                   break;
                 }
               }
