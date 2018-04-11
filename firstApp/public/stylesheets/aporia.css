@@ -1,0 +1,51 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('http://irrelevantgamer.com/wp-content/uploads/2017/05/aporia.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://www.newgamenetwork.com/images/uploads/gallery/AporiaBTV/Aporia_04.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://media.indiedb.com/images/games/1/20/19153/screenshot0021.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #d67f15;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}

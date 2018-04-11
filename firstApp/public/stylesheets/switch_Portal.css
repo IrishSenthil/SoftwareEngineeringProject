@@ -1,0 +1,92 @@
+
+.alphabeticalOrder {
+    background-color: #5cb85c;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.topImage {
+    position: absolute;
+    transition: 750ms;
+}
+
+.topImage:hover {
+    opacity: 0;
+    transition: 750ms;
+}
+
+.introImages {
+    position: relative;
+}
+
+.panel {
+    border-width: 0px;
+}
+
+
+/*custom panel headers go here*/
+
+.panel-heading {
+    text-align: center;
+    font-size: large;
+}
+
+#Ace_Attorney .panel-heading {
+    background-color: gold;
+    color: black;
+}
+
+#Aeigis_Defenders .panel-heading {
+    background-color: #6600c6;
+    color: white;
+}
+
+#Axiom_Verge .panel-heading {
+    background-color: #4b5060;
+    color: white;
+}
+
+#BatmanTheEnemyWithin .panel-heading {
+    background-color: #1f2021;
+    color: white;
+}
+
+#Bendy_and_the_Ink_Machine .panel-heading {
+    background-color: #6d4307;
+    color: white;
+}
+
+#Bulb_Boy .panel-heading {
+    background-color: #025100;
+    color: white;
+}
+
+#Cat_Quest .panel-heading {
+    background-color: #2dd3ed;
+    color: black;
+}
+
+#Celeste .panel-heading {
+    background-color: #9521b2;
+    color: white;
+}
+
+#Cluster_Truck .panel-heading {
+    background-color: #e07b1d;
+    color: white;
+}
+
+#Dandara .panel-heading {
+    background-color: #282828;
+    color: white;
+}
+
+#Death_Squared .panel-heading {
+    background-color: #17295b;
+    color: white;
+}
+
+#Dragon_Quest_X .panel-heading {
+    background-color: #ed0e0e;
+    color: white;
+}

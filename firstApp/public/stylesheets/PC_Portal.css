@@ -1,0 +1,132 @@
+
+.alphabeticalOrder {
+    background-color: #5cb85c;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.topImage {
+    position: absolute;
+    transition: 750ms;
+}
+
+.topImage:hover {
+    opacity: 0;
+    transition: 750ms;
+}
+
+.introImages {
+    position: relative;
+}
+
+.panel {
+    border-width: 0px;
+}
+
+
+/*custom panel headers go here*/
+
+.panel-heading {
+    text-align: center;
+    font-size: large;
+}
+
+#AssassinsCreedOrigins .panel-heading {
+    background-color: #f9e1a9;
+    color: sandybrown;
+}
+
+#Antihero .panel-heading {
+    background-color: #4b5060;
+    color: white;
+}
+
+#Aporia .panel-heading {
+    background-color: #d67f15;
+}
+
+#BattlefieldOne .panel-heading {
+    background-color: #576375;
+}
+
+#BatmanTheEnemyWithin .panel-heading {
+    background-color: #1f2021;
+    color: white;
+}
+
+#Battlerite .panel-heading {
+    background-color: #c14d13;
+    color: white;
+}
+
+#BlackDesertOnline .panel-heading {
+    background-color: #40af38;
+    color: white;
+}
+
+#BulletStorm .panel-heading {
+    background-color: #14a6e0;
+    color: white;
+}
+
+.gameRating {
+  width: 200px;
+}
+
+.buttons {
+  float: right;
+}
+
+.addToWishlist {
+  color: white;
+  float: right;
+  margin-top: -47px;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #3399ff;
+  transition: 0.75s;
+  display: inline-block;
+  margin-right: -9.25em;
+}
+
+.addToWishlist:hover {
+  background-color: #005ce6;
+  border-radius: 30px;
+  transition: 0.75s;
+}
+
+.downVote {
+  color: white;
+  float: right;
+  margin-top: -47px;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #ff3333;
+  transition: 0.75s;
+  display: inline-block;
+  margin-right: -6em;
+}
+
+.downVote:hover {
+  background-color: #cc0000;
+  border-radius: 30px;
+  transition: 0.75s;
+}
+
+.upVote {
+  color: white;
+  float: right;
+  margin-top: -47px;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #66ff33;
+  transition: 0.75s;
+  display: inline-block;
+  margin-right: -2.75em;
+}
+
+.upVote:hover {
+  background-color: #00cc00;
+  border-radius: 30px;
+  transition: 0.75s;
+}

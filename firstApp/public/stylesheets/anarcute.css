@@ -1,0 +1,50 @@
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://cdn4.dualshockers.com/wp-content/uploads/2016/06/anarcute.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://onlysp.com/wp-content/uploads/2016/05/AnarcuteBanner.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://i.ytimg.com/vi/L-xGSxVtU7k/maxresdefault.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #ff68ed;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}

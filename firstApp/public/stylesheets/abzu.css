@@ -1,0 +1,51 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://www.technobuffalo.com/wp-content/uploads/2016/08/Abzu-1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://thosegamingnerds.com/wp-content/uploads/2016/08/13662369_10157286444020323_350033990228287424_o.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://www.rikrak.online/wp-content/uploads/2017/05/20170525214015_1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #1b9fe5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}

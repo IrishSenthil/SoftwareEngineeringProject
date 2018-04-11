@@ -1,0 +1,49 @@
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://www.n3rdabl3.com/wp-content/images/uploads/2017/07/Launch-Key-Art_large.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://antihero-game.com/wp-content/uploads/2017/06/Antihero_Alice_WP_1920x1080.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://images.cgmagonline.com/2017/07/antihero-review-wonderfully-designed-1068x601.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #4b5060;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}

@@ -1,0 +1,55 @@
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://www.ashesofthesingularity.com/Images/sharedimage.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/228880/b08cb1f0510211e75d6ab87d1cfd793856ad741d.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://www.stardock.com/ashesofthesingularity/escalation/wallpaper/Esc_wall-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #7cff7f;
+    padding: 5px;
+    border-radius: 10px;
+    color: green;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}
+
+.comments {
+  padding: 10px;
+  color: black;
+}
