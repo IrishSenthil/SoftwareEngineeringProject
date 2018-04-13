@@ -13,6 +13,7 @@ $(document).ready(
         var newGameName;
         var gameAlreadyInDB = false;
         var tempGame;
+        var votesRemaining;
         var noVotesLeft = false;
         var userLoggedIn = false;
         getComments();
@@ -81,29 +82,28 @@ $(document).ready(
         }
 
         function voteOperations() {
-          $.get("/users/get_current_user", function (data) {
-            var votes = 5;
-            for (var i = 0; i < data.length; i++) {
-              votes = data[i].votesRemaining;
-              userLoggedIn = true;
-              alert("votes left : "+ votes);
+        $.get("/users/get_current_user", function(data) {
+        //var votes = 5;
+        for (var i = 0; i < data.length; i++) {
+            votesRemaining = data[i].votesRemaining;
+            userLoggedIn = true;
+            alert("votes left : " + votesRemaining);
 
-            if((votes-1)<0) {
-              alert("NO VOTES LEFT");
-              noVotesLeft = true;
+            if ((votesRemaining - 1) < 0) {
+                alert("NO VOTES LEFT");
+                noVotesLeft = true;
             }
-            else if(noVotes == false) {
-              $.ajax({
-                  url: '/users/updateUserDetails/' + data[i].user_name,
-                  type: 'PUT',
-                  data: { votesRemaining : votes - 1},
-                  success: function (result) {
-                  }
-              });
+            if (noVotesLeft == false) {
+                $.ajax({
+                    url: '/users/updateUserDetails/' + data[i].user_name,
+                    type: 'PUT',
+                    data: {votesRemaining: votesRemaining - 1},
+                    success: function(result) {}
+                });
             }
-            }
-          });
         }
+    });
+}
 
 
         function upVoteGame(name) {
@@ -118,8 +118,9 @@ $(document).ready(
 
                 //here
                 voteOperations();
-                alert("noVotesLeft is "+noVotesLeft);
-                alert("userloggedin is "+userLoggedIn);
+                if(userLoggedIn == false) {
+                  swal("Cannot post votes", "Please log in or register to vote", "error");
+                }
                 //END
                 if(noVotesLeft == false && userLoggedIn == true) {
                 $.ajax({
