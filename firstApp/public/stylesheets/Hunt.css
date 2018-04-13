@@ -1,0 +1,95 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('http://taw.net/cfs-filesystemfile.ashx/__key/CommunityServer.Discussions.Components.Files/37/5756.hunt_2D00_showdown_5F00_6010840.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://cdn4.dualshockers.com/wp-content/uploads/2017/11/Hunt_Showdown_Closed-Alpha-Announcement_Image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://static.gamespot.com/uploads/original/391/3912151/3233633-5294715645-Hunte.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}
+
+#reviewThree .panel-heading {
+  text-align: center;
+  font-size: large; background-color: #d11b1b;
+  color: white;
+}
+
+.panel-body {
+  color: black;
+}
+
+.panel-footer {
+  text-align: center;
+}
+
+.commentsBox {
+  background-color: #1c1a1a;
+  border-width: 0px;
+}
+
+.textArea {
+  border-width: 0px;
+  max-width: 100%;
+  background-color: #6d6969;
+  color: white;
+  font-size: medium;
+}
+
+.postButton {
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: orange;
+}
+
+.comments {
+  padding: 10px;
+  color: black;
+}

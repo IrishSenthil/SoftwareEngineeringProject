@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /*
+* Author: Carlos Alvarez
+* URL: http://alvarez.is
+*
+* Project Name: FLATTY - Free Bootstrap 3 Theme
+* Version: 1.0
+* URL: http://blacktie.co
+*/
+
+    body {
+        background-color: #f2f2f2;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #555;
+
+        -webkit-font-smoothing: antialiased;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Titles */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        color: #95a5a6;
+        font-weight: 400;
+    }
+
+    h4 {
+        color: #95a5a6;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    /* Paragraph & Typographic */
+    p {
+        line-height: 28px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    /* Links */
+    a {
+        color: #3498db;
+        word-wrap: break-word;
+
+        -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+
+    a:hover,
+    a:focus {
+        color: #7b7b7b;
+        text-decoration: none;
+        outline: 0;
+    }
+
+    a:before,
+    a:after {
+        -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .navbar-default {
+        background-color: #3498db;
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-brand {
+        color: white;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+    }
+
+    /* Helpers */
+
+    .mt {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .form-control {
+        height: 42px;
+        font-size: 18px;
+        width: 280px;
+    }
+
+    i {
+        margin: 8px;
+        color: #3498db;
+    }
+
+
+    /* HeaderWrap */
+    #headerwrap {
+        /* background: url(../img/bg01.jpg) no-repeat center top; */
+        background-color: #3498db;
+        margin-top: -20px;
+        padding-top:200px;
+        background-attachment: relative;
+        background-position: center center;
+        min-height: 650px;
+        width: 100%;
+
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #headerwrap h1 {
+        margin-top: 60px;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 45px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    /*-----------------------------------My changes to the CSS is here!--------------------------------------------------*/
+
+    /*.btn-danger.navbar-btn {
+        border-radius: 10px;
+        width: 100px;
+        background: royalblue;
+        color: white;
+        font-weight: bold;
+    }
+
+    #navbar-btn {
+        transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    }
+
+    .signinbutton:hover {
+        color: greenyellow;
+    } */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+        float: left;
+
+    }
+
+    html {
+        font-family: 'Inconsolata', monospace;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        background: #2c3e50;
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        background-color: #2c3e50;
+    }
+
+    /*position of login in and sign up as a whole unit*/
+    .group {
+        width: 500px;
+        height: 40px;
+        padding: 10px 40px;
+        line-height: 40px;
+        position: relative;
+        z-index: 1;
+        margin-left: 350px;
+        margin-right: auto;
+        margin-top: -5px;
+
+    }
+    .one {
+        float: left;
+        line-height: 40px;
+        color: white;
+        text-decoration: none;
+        margin-left: 195px;
+        transition: 1.0s;
+    }
+    .two {
+        float: right;
+        text-decoration: none;
+        line-height: 40px;
+        color: darkslategrey;
+    }
+
+    /*properties of the color box when it is on log in*/
+    .bg {
+        background-color: #e67e22;
+        height: 40px;
+        width: 90px;
+        position: absolute;
+        top: 0;
+        margin-left: -128px;
+        margin-top: 8px;
+        z-index: -1;
+        transition: 0.5s;
+        border-radius: 50px;
+        color: white;
+    }
+
+    /*properties of the color box when it is on sign up*/
+    span:hover + .bg {
+        width: 100px;
+        margin-left: -20px;
+        background: #27ae60;
+    }
+
+    .two > span:hover {
+        color: white;
+    }
+
+    /*properties of log in when the color box is not on it*/
+    .two:hover ~ .one {
+        color: darkslategrey;
+    }
+
+    /*properties of log in when the cursor is over it*/
+    .one:hover {
+        color: white;
+    }
+    span {
+        padding: 10px 0;
+        transition: 1.0s;
+    }
+
+
+    .PC_Portal_link {
+        position: relative;
+        width: 125%;
+        height: auto;
+        float: left;
+        left: 13%;
+    }
+
+    .PC_Portal_image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .PC_Portal_link:hover .PC_Portal_image {
+        opacity: 0.3;
+        border-radius: 20px;
+        image-rendering: pixelated;
+    }
+
+    .PC_Portal_link:hover .middle {
+        opacity: 1;
+    }
+
+    .PC_Portal_text {
+        background-color: darkslategrey;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        border-radius: 10px;
+    }
+
+
+    .PS4_Portal_link {
+        position: relative;
+        width: 130%;
+        float: left;
+        left: 30px;
+    }
+
+    .PS4_Portal_image {
+        opacity: 1;
+        display: block;
+        width: 130%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .PS4_Portal_link:hover .PS4_Portal_image {
+        opacity: 0.3;
+        border-radius: 20px;
+    }
+
+    .PS4_Portal_link:hover .middle {
+        opacity: 1;
+    }
+
+    .PS4_Portal_text {
+        background-color: darkslategrey;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        border-radius: 10px;
+    }
+
+
+
+    .Xbox_Portal_link {
+        position: relative;
+        width: 120%;
+        float: left;
+        left: 13%;
+        top: -25px;
+    }
+
+    .Xbox_Portal_image {
+        opacity: 1;
+        display: block;
+        width: 500px;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .Xbox_Portal_link:hover .Xbox_Portal_image {
+        opacity: 0.3;
+        border-radius: 20px;
+    }
+
+    .Xbox_Portal_link:hover .middle {
+        opacity: 1;
+    }
+
+    .Xbox_Portal_text {
+        background-color: darkslategrey;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        border-radius: 10px;
+    }
+
+    -->
+
+    /* Transitions */
+    .transition-050 {
+        -moz-transition: 0.50s;
+        -webkit-transition: 0.50s;
+        -ms-transition: 0.50s;
+        -o-transition: 0.50s;
+        transition: 1s;
+    }
+    .opacity85{
+        opacity: 0.85;
+        filter: alpha(opacity=85);
+    }
+    body { background-color:#333; color:#eee}
+    .module { max-width: 750px; margin:auto; }
+    .module figure {
+        position: relative;
+        overflow: hidden;
+        border:1px solid #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .module .small {
+        float: left;
+        width: 50%;
+    }
+    .module figure img {
+        display: block;
+        max-width: 100%;
+    }
+    .module figcaption {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        max-height: 27px;
+    }
+    .module .text {
+        color: #7A8B8B;
+        background-color: #fff;
+        font-size:0.90em;
+    }
+    .module figure:hover figcaption { max-height: 100%;}
+    .module figure:hover figcaption .text {
+        background-color: #7A8B8B;
+        color:#fff;
+    }
+    .module figcaption a { display: block; text-decoration:none; }
+    .module .title {
+        display: inline-block;
+        padding: 5px;
+        text-transform:uppercase;
+    }
+    .module .desc {
+        display: block;
+        padding: 15px;
+    }
+    .bgcolor {
+        background-color: #fff;
+    }
+
+    .search_box_bg {
+        width:750px;
+        height:500px;
+        background-color: white;
+    }
+
+    input[type=text] {
+        margin-top: 100px;
+        width: 130px;
+        box-sizing: border-box;
+        border: 5px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('http://cdn.playbuzz.com/cdn/6f37b7ee-ff84-4d2a-8084-d613b9ff9e38/23d2bdb3-ae78-40a4-b4e1-fbd17ce2395b.jpg');
+        background-position: -10px -25px;
+        background-repeat: no-repeat;
+        background-size: 750px 330px;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        color: white;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white;
+        opacity: 1;
+    }
+
+    .search_box_statement {
+        font-family: "Modern No. 20";
+        color: red;
+    }
+
+    #myCanvas{
+        color: #0cff15;
+        background-image: url("http://www.backgroundsy.com/file/dust-background.jpg");
+        -webkit-background-image: url("http://www.backgroundsy.com/file/dust-background.jpg");
+        border:1px solid black;
+        width:500px;
+        height:500px;
+    }
+
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+</style>
+<body>
+<section class="module">
+    <header>
+        <h1>Responsive Image Mosaic</h1>
+    </header>
+    <section class="wrapper">
+        <figure class='small'>
+            <a href="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81Pz14q%2B%2BHL._SL1500_.jpg" alt="">
+            </a>
+            <figcaption class="transition-050 opacity85">
+                <a href="#">
+                    <strong class="text transition-050 title">PC Portal</strong>
+                    <span class="text transition-050 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum, voluptate voluptatum fugit nulla inventore </span>
+                </a>
+            </figcaption>
+        </figure>
+        <figure class='small'>
+            <a href="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51Kp%2BQBCdTL.jpg" alt="">
+            </a>
+            <figcaption class="transition-050 opacity85">
+                <a href="">
+                    <strong class="text transition-050 title">title</strong>
+                    <span class="text transition-050 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum, voluptate voluptatum fugit nulla inventore </span>
+                </a>
+            </figcaption>
+        </figure>
+        <figure class='small'>
+            <a href="">
+                <div class="PS4_portal">
+                    <img src="https://johnlewis.scene7.com/is/image/JohnLewis/236542505?$prod_main$" alt="PS4 Console">
+                </div>
+            </a>
+            <figcaption class="transition-050 opacity85">
+                <a href="">
+                    <strong class="text transition-050 title">title</strong>
+                    <span class="text transition-050 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum, voluptate voluptatum fugit nulla inventore </span>
+                </a>
+            </figcaption>
+        </figure>
+        <figure class='small'>
+            <a href="">
+                <img src="https://s4.thcdn.com/productimg/600/600/11396089-3024514390159595.jpg" alt="">
+            </a>
+            <figcaption class="transition-050 opacity85">
+                <a href="">
+                    <strong class="text transition-050 title">title</strong>
+                    <span class="text transition-050 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum, voluptate voluptatum fugit nulla inventore </span>
+                </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="">
+                <div class="hey">
+                    <img src="https://compass-ssl.xbox.com/assets/0a/64/0a64bc5c-9dd7-485b-b72a-77ad63dcf5e5.jpg?n=Console-Hub-MWF-2017_Page-Hero-1084_X1X_1920x720_02.jpg" alt="">
+                </div>
+            </a>
+            <figcaption class="transition-050 opacity85">
+                <a href="">
+                    <strong class="text transition-050 title">title</strong>
+                    <span class="text transition-050 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum, voluptate voluptatum fugit nulla inventore </span>
+                </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <div class="search_box">
+                <div class="search_box_bg">
+                    <div class="search_box_statement">Find a game in our database!</div>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </div>
+            </div>
+        </figure>
+
+        <figure>
+            <canvas id="myCanvas" width="300" height="300" >
+            </canvas>
+
+        </figure>
+
+
+    </section>
+</section>
+
+<p>
+    <button onclick="myMove()">Click Me</button>
+</p>
+
+<div id ="container">
+    <div id ="animate"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    var context;
+
+    function myMove() {
+        context= myCanvas.getContext('2d');
+        setInterval(draw,100); //speed of animation execution
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+        context.font = "50px Georgia";
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + 'px';
+                elem.style.left = pos + 'px';
+            }
+
+            if( x<0 || x>300) {
+                x = x-300;
+            }
+            if( y<0 || y>200) y = y-200;
+            x+=dx;
+            y+=dy;
+
+            context.drawImage(marioSky, x*0.5, 0, 1920*0.3, 1080*0.3);
+            context.drawImage(marioGround, x, 280, 1152*0.5, 648*0.5);
+            context.fillText("Hello world!", x, y+10);
+        }
+    }
+
+    var x=0;  //Starting x value
+    var y=100;  //starting y value
+    var dx=5;  //rate of change of x value (x-speed)
+    var dy=0;  //rate of change of y value (y-speed)
+    var marioGround = new Image;
+    var marioSky = new Image;
+    marioGround.src = "/images/Mario_ground.png";
+    marioSky.src = "/images/Mario_sky.png";
+
+
+    function init()
+    {
+        context= myCanvas.getContext('2d');
+        setInterval(draw,100); //speed of animation execution
+    }
+
+    function draw()
+    {
+        context.font = "50px Georgia";
+        context.clearRect(0,0, 300,300);
+        context.beginPath();
+        context.fillStyle="red";
+        // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+        //context.arc(x,y,20,0,Math.PI*2,true);
+        //context.rect(x, y, 20, 20);
+        context.closePath();
+        context.fill();
+        // Boundary Logic
+        if( x<0 || x>300) {
+            x = x-300;
+        }
+        if( y<0 || y>200) y = y-200;
+        x+=dx;
+        y+=dy;
+
+        context.drawImage(marioSky, x*0.5, 0, 1920*0.3, 1080*0.3);
+        context.drawImage(marioGround, x, 280, 1152*0.5, 648*0.5);
+        context.fillText("Hello world!", x, y+10);
+
+    }
+</script>
+
+</body>
+</html>

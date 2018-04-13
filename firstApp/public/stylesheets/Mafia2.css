@@ -1,0 +1,95 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://wallpaperscraft.com/image/mafia_2_pistol_suit_look_22005_1920x1080.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://images5.alphacoders.com/319/319524.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('http://www.wallpapers4u.org/wp-content/uploads/mafia_2_pistol_blood_city_22004_1920x1080.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}
+
+#reviewThree .panel-heading {
+  text-align: center;
+  font-size: large; background-color: #d11b1b;
+  color: white;
+}
+
+.panel-body {
+  color: black;
+}
+
+.panel-footer {
+  text-align: center;
+}
+
+.commentsBox {
+  background-color: #1c1a1a;
+  border-width: 0px;
+}
+
+.textArea {
+  border-width: 0px;
+  max-width: 100%;
+  background-color: #6d6969;
+  color: white;
+  font-size: medium;
+}
+
+.postButton {
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: orange;
+}
+
+.comments {
+  padding: 10px;
+  color: black;
+}

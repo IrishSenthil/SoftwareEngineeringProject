@@ -1,0 +1,95 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://www.walldevil.com/wallpapers/a19/wallpaper-bulletstorm-official-desktop-city-peaceful.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://www.glaciergaming.co.uk/images/7231.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://images3.alphacoders.com/172/thumb-1920-172257.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #376393;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}
+
+#reviewThree .panel-heading {
+  text-align: center;
+  font-size: large; background-color: #d11b1b;
+  color: white;
+}
+
+.panel-body {
+  color: black;
+}
+
+.panel-footer {
+  text-align: center;
+}
+
+.commentsBox {
+  background-color: #1c1a1a;
+  border-width: 0px;
+}
+
+.textArea {
+  border-width: 0px;
+  max-width: 100%;
+  background-color: #6d6969;
+  color: white;
+  font-size: medium;
+}
+
+.postButton {
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: orange;
+}
+
+.comments {
+  padding: 10px;
+  color: black;
+}

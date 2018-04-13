@@ -242,6 +242,268 @@ router.get('/bulbBoy', function(req, res, next) {
     res.render('bulbBoy');
 });
 
+router.get('/CallOfDutyADVWAR', function(req, res, next) {
+    res.render('CallOfDutyADVWAR');
+});
+
+//-------------------------API to render CallOfDutyBlack3.hbs-------------------------------------------------
+
+router.get('/CallOfDutyBlack3', function(req, res, next) {
+    res.render('CallOfDutyBlack3');
+});
+
+//-------------------------API to render CallOfDutyGhost.hbs-------------------------------------------------
+
+router.get('/CallOfDutyGhost', function(req, res, next) {
+    res.render('CallOfDutyGhost');
+});
+
+
+
+
+//-------------------------API to render Divinity 2.hbs-------------------------------------------------
+
+router.get('/Divinity2', function(req, res, next) {
+    res.render('Divinity2');
+});
+
+//-------------------------API to render Doom.hbs-------------------------------------------------
+
+router.get('/Doom', function(req, res, next) {
+    res.render('Doom');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Divinity.hbs-------------------------------------------------
+
+router.get('/Divinity', function(req, res, next) {
+    res.render('Divinity');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render DragonsDogma.hbs-------------------------------------------------
+
+router.get('/DragonsDogma', function(req, res, next) {
+    res.render('DragonsDogma');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render DragonsDogma.hbs-------------------------------------------------
+
+router.get('/Dishonoured2', function(req, res, next) {
+    res.render('Dishonoured2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render DeusEX.hbs-------------------------------------------------
+
+router.get('/DeusEx', function(req, res, next) {
+    res.render('DeusEx');
+});
+
+//-------------------------API to render EvilWithin.hbs-------------------------------------------------
+
+router.get('/EvilWithin', function(req, res, next) {
+    res.render('EvilWithin');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render EvilWithin2.hbs-------------------------------------------------
+
+router.get('/EvilWithin2', function(req, res, next) {
+    res.render('EvilWithin2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Evolve.hbs-------------------------------------------------
+
+router.get('/Evolve', function(req, res, next) {
+    res.render('Evolve');
+});
+
+//-------------------------API to render FF15.hbs-------------------------------------------------
+
+router.get('/FF15', function(req, res, next) {
+    res.render('FF15');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Fallout4.hbs-------------------------------------------------
+
+router.get('/Fallout4', function(req, res, next) {
+    res.render('Fallout4');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render FF7.hbs-------------------------------------------------
+
+router.get('/FF7', function(req, res, next) {
+    res.render('FF7');
+});
+
+//-------------------------API to render GTA5.hbs-------------------------------------------------
+
+router.get('/GTA5', function(req, res, next) {
+    res.render('GTA5');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render GTA4.hbs-------------------------------------------------
+
+router.get('/GTA4', function(req, res, next) {
+    res.render('GTA4');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render GhostReconWild.hbs-------------------------------------------------
+
+router.get('/GhostReconWild', function(req, res, next) {
+    res.render('GhostReconWild');
+});
+
+//-------------------------API to render HalfLife2.hbs-------------------------------------------------
+
+router.get('/HalfLife2', function(req, res, next) {
+    res.render('HalfLife2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Hitman.hbs-------------------------------------------------
+
+router.get('/Hitman', function(req, res, next) {
+    res.render('Hitman');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Hunt.hbs-------------------------------------------------
+
+router.get('/Hunt', function(req, res, next) {
+    res.render('Hunt');
+});
+
+//-------------------------API to render Injustice.hbs-------------------------------------------------
+
+router.get('/Injustice', function(req, res, next) {
+    res.render('Injustice');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Injustice2.hbs-------------------------------------------------
+
+router.get('/Injustice2', function(req, res, next) {
+    res.render('Injustice2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render IcewindDale.hbs-------------------------------------------------
+
+router.get('/IcewindDale', function(req, res, next) {
+    res.render('IcewindDale');
+});
+
+//-------------------------API to render JadeEmpire.hbs-------------------------------------------------
+
+router.get('/JadeEmpire', function(req, res, next) {
+    res.render('JadeEmpire');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render JustCause2.hbs-------------------------------------------------
+
+router.get('/JustCause2', function(req, res, next) {
+    res.render('JustCause2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render JustCause3.hbs-------------------------------------------------
+
+router.get('/JustCause3', function(req, res, next) {
+    res.render('JustCause3');
+});
+
+//-------------------------API to render KillerInstinct.hbs-------------------------------------------------
+
+router.get('/KillerInstinct', function(req, res, next) {
+    res.render('KillerInstinct');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render KillingFloor.hbs-------------------------------------------------
+
+router.get('/KillingFloor', function(req, res, next) {
+    res.render('KillingFloor');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render KillingFloor2.hbs-------------------------------------------------
+
+router.get('/KillingFloor2', function(req, res, next) {
+    res.render('KillingFloor2');
+});
+
+//-------------------------API to render LifeIsStrange.hbs-------------------------------------------------
+
+router.get('/LifeIsStrange', function(req, res, next) {
+    res.render('LifeIsStrange');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Left4Dead.hbs-------------------------------------------------
+
+router.get('/Left4Dead', function(req, res, next) {
+    res.render('Left4Dead');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Left4Dead2.hbs-------------------------------------------------
+
+router.get('/Left4Dead2', function(req, res, next) {
+    res.render('Left4Dead2');
+});
+
+//-------------------------API to render Mafia2.hbs-------------------------------------------------
+
+router.get('/Mafia2', function(req, res, next) {
+    res.render('Mafia2');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render MetalGear5.hbs-------------------------------------------------
+
+router.get('/MetalGear5', function(req, res, next) {
+    res.render('MetalGear5');
+});
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------API to render Metro.hbs-------------------------------------------------
+
+router.get('/Metro', function(req, res, next) {
+    res.render('Metro');
+});
+
+
 //------------------------------------------------------------------------------------------------
 
 //Creates a Jason Web Token (JWT)

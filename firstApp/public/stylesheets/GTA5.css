@@ -1,0 +1,95 @@
+
+
+.backgroundOne {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('https://i.ytimg.com/vi/OCTtExU4yEo/maxresdefault.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundTwo {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://img.gta5-mods.com/q95/images/fps-optimization/6daf71-Gta%20V%20Trio%20Wallpaper%201920x1080%20Gta%20V%20Trio.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundThree {
+  height: 200px;
+  min-height: 30px;
+  background: url('https://wallpaperscraft.com/image/gta_gta_5_2015_characters_art_102155_1920x1080.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alphabeticalOrder {
+    background-color: #4db34d;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.details {
+  margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+  height: 100%;
+}
+
+.mySlides {
+  border-radius: 10px;
+}
+
+#reviewThree .panel-heading {
+  text-align: center;
+  font-size: large; background-color: #d11b1b;
+  color: white;
+}
+
+.panel-body {
+  color: black;
+}
+
+.panel-footer {
+  text-align: center;
+}
+
+.commentsBox {
+  background-color: #1c1a1a;
+  border-width: 0px;
+}
+
+.textArea {
+  border-width: 0px;
+  max-width: 100%;
+  background-color: #6d6969;
+  color: white;
+  font-size: medium;
+}
+
+.postButton {
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: orange;
+}
+
+.comments {
+  padding: 10px;
+  color: black;
+}
