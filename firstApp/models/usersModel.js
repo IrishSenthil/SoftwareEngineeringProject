@@ -21,7 +21,8 @@ var usersSchema = new Schema({
     wishGameFive: {type: String, default: ""},
     wishGameFiveImage: {type: String, default: ""},
     wishlistArray: {type: String, default: ["","","","","",""]},
-    votesRemaining: {type: Number, default: 5}
+    votesRemaining: {type: Number, default: 5},
+    noVotesDate: {type: Number, default: 1}
 });
 
 /*

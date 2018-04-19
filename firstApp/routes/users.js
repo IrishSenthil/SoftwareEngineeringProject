@@ -230,6 +230,10 @@ router.get('/batmanTheEnemyWithin', function(req, res, next) {
     res.render('batmanTheEnemyWithin');
 });
 
+router.get('/Battlerite', function(req, res, next) {
+    res.render('Battlerite');
+});
+
 //-------------------------API to render bendyAndTheInkMachine.hbs-------------------------------------------------
 
 router.get('/bendyAndTheInkMachine', function(req, res, next) {
@@ -505,6 +509,132 @@ router.get('/Metro', function(req, res, next) {
 
 
 //------------------------------------------------------------------------------------------------
+
+////colette added from there
+router.get('/zenge', function(req, res, next){
+    res.render('zenge');
+});
+router.get('/zeroTimeDilema', function(req, res, next){
+    res.render('zeroTimeDilema');
+});
+router.get('/zenoClash2', function(req, res, next){
+    res.render('zenoClash2');
+});
+router.get('/zeroEscapeVLR', function(req, res, next){
+    res.render('zeroEscapeVLR');
+});
+
+router.get('/yookaLaylee', function(req, res, next){
+    res.render('yookaLaylee');
+});
+router.get('/yarsRevenge', function(req, res, next){
+    res.render('yarsRevenge');
+
+});
+router.get('/yaibaNinjaGaidenZ', function(req, res, next){
+    res.render('yaibaNinjaGaidenZ');
+});
+router.get('/xCom2', function(req, res, next){
+    res.render('xCom2');
+});
+router.get('/xenonValkyrie', function(req, res, next){
+    res.render('xenonValkyrie');
+});
+router.get('/xBlades', function(req, res, next){
+    res.render('xBlades');
+});
+router.get('/theWitcher3', function(req, res, next){
+    res.render('theWitcher3');
+});
+router.get('/watchDogs', function(req, res, next){
+    res.render('watchDogs');
+});
+router.get('/weHappyFew', function(req, res, next){
+    res.render('weHappyFew');
+});
+router.get('/virtuaTennis4', function(req, res, next){
+    res.render('virtuaTennis4');
+});
+
+router.get('/vanquish', function(req, res, next){
+    res.render('vanquish');
+});
+
+router.get('/velvetAssassin', function(req, res, next){
+    res.render('velvetAssassin');
+});
+router.get('/ultimateMvsC', function(req, res, next){
+    res.render('ultimateMvsC');
+});
+router.get('/unchartedTheLostLegacy', function(req, res, next){
+    res.render('unchartedTheLostLegacy');
+});
+router.get('/urbanEmpire', function(req, res, next){
+    res.render('urbanEmpire');
+});
+router.get('/tombRaider', function(req, res, next){
+    res.render('tombRaider');
+});
+router.get('/teamFortress2', function(req, res, next){
+    res.render('teamFortress2');
+});
+router.get('/terraria', function(req, res, next){
+    res.render('terraria');
+});
+router.get('/sonicMania', function(req, res, next){
+    res.render('sonicMania');
+});
+router.get('/sims3', function(req, res, next){
+    res.render('sims3');
+});
+router.get('/starbound', function(req, res, next){
+    res.render('starbound');
+});
+router.get('/rime', function(req, res, next){
+    res.render('rime');
+});
+router.get('/rememberMe', function(req, res, next){
+    res.render('rememberMe');
+});
+router.get('/rogueLegacy', function(req, res, next){
+    res.render('rogueLegacy');
+});
+router.get('/qube', function(req, res, next){
+    res.render('qube');
+});
+router.get('/quadrilateralCowboy', function(req, res, next){
+    res.render('quadrilateralCowboy');
+});
+router.get('/quake4', function(req, res, next){
+    res.render('quake4');
+});
+router.get('/portal2', function(req, res, next){
+    res.render('portal2');
+});
+router.get('/pubg', function(req, res, next){
+    res.render('pubg');
+});
+router.get('/plagueInc', function(req, res, next){
+    res.render('plagueInc');
+});
+router.get('/oxygenNotIncluded', function(req, res, next){
+    res.render('oxygenNotIncluded');
+});
+router.get('/outlast2', function(req, res, next){
+    res.render('outlast2');
+});
+router.get('/onimusha3DS', function(req, res, next){
+    res.render('onimusha3DS');
+});
+router.get('/nierAutomata', function(req, res, next){
+    res.render('nierAutomata');
+});
+router.get('/nba2k18', function(req, res, next){
+    res.render('nba2k18');
+});
+router.get('/niNoKuni2', function(req, res, next){
+    res.render('niNoKuni2');
+});
 
 //Creates a Jason Web Token (JWT)
 function createJwt(profile) {

@@ -10,6 +10,7 @@ var marioRun = new Image;
 var marioRunFlipped = new Image;
 var marioRunTwo = new Image;
 var marioRunTwoFlipped = new Image;
+var marioRuntwo = new Image;
 var marioRunThree = new Image;
 var marioRunThreeFlipped = new Image;
 var marioJump = new Image;
@@ -30,51 +31,59 @@ var marioPosition = 100;
 var vulnerable = false;
 var hit = false;
 var clear = false;
-
+var runningBack = false;
+var startGame = false;
 marioWall.src = "https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/27331748_772113252983075_7180966356641750945_n.jpg?oh=ede0f5cd696c5a7beaf7e2fab2f02bd6&oe=5B21E1D6";
 marioGround.src = "https://scontent.fdub1-1.fna.fbcdn.net/v/t31.0-8/27164633_769642033230197_3310307531449694508_o.png?oh=e4eff069f7af82bbad5f74a747786535&oe=5AEC980A";
-marioSky.src = "https://scontent.fdub1-1.fna.fbcdn.net/v/t31.0-8/27023329_769678173226583_7851678716185046962_o.png?oh=c390d6c674f5b55d8ca05b0a0902512e&oe=5AE389FB";
-marioRun.src = "https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/27332531_769687789892288_3206730982696979901_n.png?oh=3780f86ed7c684540518eb8b53c37731&oe=5ADA5B7B";
-marioRunTwo.src = "https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/27336939_769691086558625_7265624589848601238_n.png?oh=795dcb57a4132cd9df898d65227b4853&oe=5AE70CDC";
-marioRunThree.src = "https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/27331788_769701963224204_7515919421864263316_n.png?oh=dfcbc7cc2a78226f8796480eccaed668&oe=5B1D5539";
+marioSky.src = "/images/marioSky.png";
+marioRun.src = "/images/marioRun.png";
+marioRunFlipped.src = "/images/marioRunFlipped.png"
+marioRunTwo.src = "/images/marioRunTwo.png";
+marioRunThree.src = "/images/marioRunThree.png";
+marioRunTwoFlipped.src = "/images/marioRunTwoFlipped.png";
+marioRunThreeFlipped.src = "/images/marioRunThreeFlipped.png";
 marioJump.src ="https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/27336757_769999943194406_192357506866066718_n.png?oh=b173e5a46221eae0727ec39b7c7554ac&oe=5B2034A3";
 bulletBill.src="https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/27067571_771790183015382_2945565804751162241_n.png?oh=bee1ad37ccb5e2cf532f21a282943dfc&oe=5ADB501E";
+
+
 
 function init()
 {
     context= myCanvas.getContext('2d');
     jumpCanvas = canvasTwo.getContext('2d');
-    setInterval(draw,50); //speed of animation execution
+    setInterval(draw,25); //speed of animation execution
 }
 
 function draw()
 {
+  if(startGame == true) {
     context.font = "20px Georgia";
     context.clearRect(0,0, 300,300);
     context.beginPath();
     context.fillStyle="red";
-    // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
-    //context.arc(x,y,20,0,Math.PI*2,true);
-
-    //context.rect(x, y, 20, 20);
 
     context.fill();
     // Boundary Logic
     if( (x<0) || (x>=1300)) {
-
+        if(x>=1300) {
+          runningBack = true;
+        }
+        else runningBack = false;
         dx = -dx;
     }
-    bulletBillx = x;
-    bulletBillx = bulletBillx*3;
+    //bulletBillx = x;
+    //bulletBillx = bulletBillx*3;
     //if(bulletBillx>1300)
    // {
    //     bulletBilldx = -bulletBilldx;
    // }
     context.drawImage(marioSky, -x*0.5-10, 0, 1920*0.3, 1080*0.3);
     context.drawImage(marioSky, -x*0.5+490, 0, 1920*0.3, 1080*0.3);
+
     context.drawImage(marioGround, (-x-10), 280, 1152*0.5, 648*0.5);
     context.drawImage(marioGround, (-x+500), 280, 1152*0.5, 648*0.5);
     context.drawImage(marioGround, (-x+1000), 280, 1152*0.5, 648*0.5);
+
     context.rect(0, 200, 20, 20);
     context.drawImage(bulletBill, bulletBillx, 260, 17, 17);
     context.drawImage(marioWall, 0-x, 180, 100, 100);
@@ -95,36 +104,49 @@ function draw()
 
     if((moveMeter <= 3) && (jumpTrigger == false))
     {
+      if(runningBack == false) {
         context.drawImage(marioRun, 100, 240, 142*0.25, 158*0.25);
+      }
+      else {
+        context.drawImage(marioRunFlipped, 100, 240, 142*0.25, 158*0.25);
+      }
         midStep = false;
     }
 
     if((((moveMeter<=6)&&(moveMeter>3))||((moveMeter<=12) &&(moveMeter>9)))  && (jumpTrigger == false))
     {
-
+      if(runningBack == false) {
         context.drawImage(marioRunTwo, 100, 240, 110*0.25, 160*0.25);
-        midStep=true;
-
+      }
+      else {
+        context.drawImage(marioRunTwoFlipped, 100, 240, 110*0.25, 160*0.25);
+      }
+      midStep=true;
     }
 
     if((moveMeter <= 9) && (moveMeter >6) && (jumpTrigger == false))
     {
+      if(runningBack == false) {
         context.drawImage(marioRunThree, 100, 240, 142*0.25, 158*0.25);
+      }
+      else {
+        context.drawImage(marioRunThreeFlipped, 100, 240, 142*0.25, 158*0.25);
+      }
         midStep = false;
     }
 
     if((moveMeter >11) && (jumpTrigger == false))
     {
-
         moveMeter = 0;
         midStep = false;
     }
 
-    context.fillText(x, 20, 20);
 
     moveMeter++;
     gameScore++;
-    context.fillText(bulletBillx, 100, 40);
+
+    context.font = "15px Georgia";
+    context.fillText("Score : "+gameScore, 130, 40);
 
     if(midStep == true)
     {
@@ -133,11 +155,12 @@ function draw()
     else {
         x+=dx;
     }
-    j++;
+
+    bulletBillx = bulletBillx + bulletBilldx;
 
     if(bulletBillx>1300 || bulletBillx<0)
     {
-
+      bulletBilldx = -bulletBilldx;
     }
 
 
@@ -149,6 +172,9 @@ function draw()
         //  jumpTrigger = false;
         //if(jumpTime>20)
         marioJumping.style.visibility = "visible";
+        if(runningBack == true) {
+          document.getElementById("marioJumping").src = "/images/marioJumpingFlipped.png";
+        }
         if(jumpTime<5)
         {
             marioJumping.style.top = (76-jumpTime*5)+'%';
@@ -185,7 +211,20 @@ function draw()
 
     }
 }
+else {
+  context.drawImage(marioSky, -x*0.5-10, 0, 1920*0.3, 1080*0.3);
+  context.drawImage(marioGround, (-x-10), 280, 1152*0.5, 648*0.5);
+  context.drawImage(marioWall, 0-x, 180, 100, 100);
+  context.drawImage(marioRun, 100, 240, 142*0.25, 158*0.25);
+  context.font = "20px Georgia";
+  context.fillText("Click Start!", 70, 40);
+}
+}
 
 function jump() {
     jumpTrigger = true;
+}
+
+function restart() {
+  startGame = true;
 }

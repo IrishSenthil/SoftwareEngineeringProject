@@ -151,7 +151,6 @@ $(document).ready(
                         gamesInWishlist = 0;
                         getComments();
                         window.location.reload();
-                        swal("Wishlist updated!")
                     }
                 });
         });

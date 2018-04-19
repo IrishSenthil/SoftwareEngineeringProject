@@ -454,7 +454,8 @@ body { background-color:#333; color:#eee}
 .search_box_bg {
     width:750px;
     height:500px;
-    background-color: white;
+    background-color: #5993a6;
+    border-width: 0px;
 }
 
 input[type=text] {
@@ -501,12 +502,9 @@ input[type=text]:focus {
 
 #myCanvas{
     color: #0cff15;
-    background-image: url("https://scontent.fdub1-1.fna.fbcdn.net/v/t31.0-8/27023329_769678173226583_7851678716185046962_o.png?oh=c390d6c674f5b55d8ca05b0a0902512e&oe=5AE389FB");
-    -webkit-background-image: url("https://scontent.fdub1-1.fna.fbcdn.net/v/t31.0-8/27023329_769678173226583_7851678716185046962_o.png?oh=c390d6c674f5b55d8ca05b0a0902512e&oe=5AE389FB");
-    border:1px solid black;
     background-size: 200% 100%;;
-    width:500px;
-    height:500px;
+    width:373px;
+    height:373px;
 }
 
 #canvasTwo {
@@ -520,9 +518,9 @@ input[type=text]:focus {
 #marioJumping {
     position: absolute;
     top: 76%;
-    left: 27%;
-    width:  66px;
-    height: 80px;
+    left: 20%;
+    width:  45px;
+    height: 60px;
     z-index: 2;
     visibility: hidden;
 }
@@ -558,7 +556,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: v
 
 .wishlistOuter {
   width: 24.5%;
-  background-color: #e60000;
+  background-color: black;
   height: 100%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -566,8 +564,8 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: v
 }
 
 .wishlistInner {
-  color: black;
-  background-color: #e6e6e6;
+  color: blue;
+  background-color: black;
   border-radius: 10px;
   margin-top: 15px;
   width: 100%;
@@ -587,3 +585,12 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: v
 .panel-group {
   margin-top: 83px;
 }
+
+.homepageBack {
+  background-image: url('/images/homepageImage.jpg');
+}
+
+
+/* .marioGame {
+  margin-left: 200px;
+} */

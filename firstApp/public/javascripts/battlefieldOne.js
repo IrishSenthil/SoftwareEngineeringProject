@@ -3,6 +3,7 @@
         var showPosts = false;
         var like = false;
         var dislike = false;
+        var currentUser = "anon";
 
         $("#postForm").keyup(function (event) {
             var inputText = event.target.value;
@@ -16,22 +17,26 @@
          */
 
         function getComments() {
+          $.get("/users/get_current_user", function(data) {
+            currentUser = data[0].user_name;
+          });
             $.get("/get_battleFieldOne_Comments", function (data) {
                 var posts = "";
-              
+                var showButton = "block";
                 for (var i = 0; i < data.length; i++) {
                   var userName = data[i].user_name;
                   var comment = data[i].comment;
                   var date = data[i].date_created;
-
+                  showButton = "block";
+                  if(userName !== currentUser) {
+                    showButton = "none";
+                  }
                     posts += "<div class='comments'><div class='row well' style='border-radius: 20px; margin: auto;'><div class='title col-xs-9' style='color: #ffb014; font-weight: bold;'>"
                          + userName + "<p style='font-weight: normal; color: black ;display: inline;'>" + " @ " + date + "</p>" + "<br>" + "<p style='font-weight: normal; color: black'>"
-                         + comment + "</p></div><div class='col-xs-3'>" + "<button type='button' value='0' name='" + data[i]._id + "' class='btn btn-danger'>" +
-                        "Delete</button>" +"<div style='padding-top: 20px'>"+"<button type='button' value='1' name='" + data[i]._id + "' class='btn btn-info'>" +
+                         + comment + "</p></div><div class='col-xs-3'>" + "<button type='button' value='0' name='" + data[i]._id + "' class='btn btn-danger deleteButton' style='display:"+ showButton +"'>" +
+                        "Delete</button>" +"<div style='padding-top: 20px'>"+"<button type='button' value='1' name='" + data[i]._id + "' class='btn btn-info updateButton'style='display:"+ showButton +"''>" +
                         "Update</button></div></div></div></div>" + "</div></div>";
                 }
-
-
 
                 $("#feedPosts").html(posts);
                 $("#count").html(data.length);
@@ -50,13 +55,16 @@
          */
         $("#postForm").submit(function (event) {
             event.preventDefault();
+            console.log(event.target.name);
             $.post("/add_battlefieldOne_Comment", {
+                user_name: currentUser,
                 comment: event.target.inputPost.value
             }, function (result) {
-                $("#charRemaining").html(totalCharacters);
-                event.target.reset();
-                getComments();
+              getComments();
             });
+            $("#charRemaining").html(totalCharacters);
+
+            event.target.reset();
         });
 
 

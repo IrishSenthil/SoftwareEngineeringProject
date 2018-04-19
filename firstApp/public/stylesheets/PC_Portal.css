@@ -43,10 +43,12 @@
 
 #Aporia .panel-heading {
     background-color: #d67f15;
+    color: white;
 }
 
 #BattlefieldOne .panel-heading {
     background-color: #576375;
+    color: white;
 }
 
 #BatmanTheEnemyWithin .panel-heading {
@@ -59,15 +61,362 @@
     color: white;
 }
 
+#BitBlasterXL .panel-heading {
+    background-color: #33FFF6;
+    color: white;
+}
+
 #BlackDesertOnline .panel-heading {
-    background-color: #40af38;
+    background-color: #000000;
     color: white;
 }
 
 #BulletStorm .panel-heading {
-    background-color: #14a6e0;
+    background-color: #376393;
     color: white;
 }
+
+#CallOfDutyADVWAR .panel-heading {
+    background-color: #F5ECCE;
+    color: white;
+}
+
+#CallOfDutyBlack3 .panel-heading {
+    background-color: #ff3300;
+    color: white;
+}
+
+#CallOfDutyGhost .panel-heading {
+    background-color: #0000ff;
+    color: white;
+}
+
+#Divinity2 .panel-heading {
+    background-color: #DC143C;
+    color: white;
+}
+
+#Doom .panel-heading {
+    background-color: #DAA520;
+    color: white;
+}
+
+#Divinity .panel-heading {
+    background-color: #DC143C;
+    color: white;
+}
+
+#DragonsDogma .panel-heading {
+    background-color: #000000;
+    color: white;
+}
+
+#Dishonoured2 .panel-heading {
+    background-color: #00008B;
+    color: white;
+}
+
+#DeusEx .panel-heading {
+    background-color: #FF8C00;
+    color: white;
+}
+
+#EvilWithin .panel-heading {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+#EvilWithin2 .panel-heading {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+#Evolve .panel-heading {
+    background-color: #FFA500;
+    color: white;
+}
+
+#FF15 .panel-heading {
+    background-color: #0000A0;
+    color: white;
+}
+
+#Fallout4 .panel-heading {
+    background-color: #0000FF;
+    color: white;
+}
+
+#FF7 .panel-heading {
+    background-color: #00FFFF;
+    color: white;
+}
+
+#GTA5 .panel-heading {
+    background-color:	#4db34d;
+    color: white;
+}
+
+#GTA4 .panel-heading {
+    background-color: #595959;
+    color: white;
+}
+
+#GhostReconWild .panel-heading {
+    background-color: #ff8000;
+    color: white;
+}
+
+#HalfLife2 .panel-heading {
+    background-color:	#ff4000;
+    color: white;
+}
+
+#Hitman .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#Hunt .panel-heading {
+    background-color: #000000;
+    color: white;
+}
+
+#Injustice .panel-heading {
+    background-color:	#0000ff;
+    color: white;
+}
+
+#Injustice2 .panel-heading {
+    background-color: #0000ff;
+    color: white;
+}
+
+#IcewindDale .panel-heading {
+    background-color: #4060bf;
+    color: white;
+}
+
+#JadeEmpire .panel-heading {
+    background-color:	#ff4000;
+    color: white;
+}
+
+#JustCause2 .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#JustCause3 .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#KillerInstinct .panel-heading {
+    background-color:	#808080;
+    color: white;
+}
+
+#KillingFloor .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#KillingFloor2 .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#LifeIsStrange .panel-heading {
+    background-color:	#ff0080;
+    color: white;
+}
+
+#Left4Dead .panel-heading {
+    background-color: #39c639;
+    color: white;
+}
+
+#Left4Dead2 .panel-heading {
+    background-color: #d2a92d;
+    color: white;
+}
+
+#Mafia2 .panel-heading {
+    background-color:	#000000;
+    color: white;
+}
+
+#MetalGear5 .panel-heading {
+    background-color: #999999;
+    color: white;
+}
+
+#Metro .panel-heading {
+    background-color: #ff0000;
+    color: white;
+}
+
+#Zenge .panel-heading{
+      background-color: #23D7A6;
+      color:black;
+}
+#ZeroTimeDilema .panel-heading{
+    background-color: #886205;
+    color:white;
+}
+#ZenoClash2 .panel-heading{
+    background-color: #EE2C2C;
+    color:white;
+}
+#ZeroEscapeVLR .panel-heading{
+    background-color: #020600;
+    color:white;
+}
+#YookaLaylee .panel-heading{
+    background-color: #88EA1E;
+    color:white;
+}
+#YarsRevenge .panel-heading{
+    background-color: #FFBB28;
+    color:white;
+}
+#YaibaNinjaGaidenZ .panel-heading{
+    background-color: #F91616;
+    color:white;
+}
+#XCom2 .panel-heading{
+    background-color: #BBBBBB;
+    color:white;
+}
+#XenonValkyrie .panel-heading{
+    background-color: #CA9720;
+    color:white;
+}
+#XBlades .panel-heading{
+    background-color: #FE980E;
+    color:white;
+}
+#TheWitcher3 .panel-heading{
+    background-color: #C4C0A8;
+    color:white;
+}
+#WeHappyFew .panel-heading{
+    background-color: #F7DC44;
+    color:white;
+}
+#WatchDogs .panel-heading{
+    background-color: #55C0C8;
+    color:white;
+}
+#VelvetAssassin .panel-heading{
+    background-color: #B53907;
+    color:white;
+}
+#Vanquish .panel-heading{
+    background-color: #C279FF;
+    color:white;
+}
+#VirtuaTennis4 .panel-heading{
+    background-color: #4CFE0E;
+    color:white;
+}
+#UltimateMvsC .panel-heading{
+    background-color: #F90526;
+    color:white;
+}
+#UrbanEmpire .panel-heading{
+    background-color: #B1B0AE;
+    color:white;
+}
+#UnchartedTheLostLegacy .panel-heading{
+    background-color: #754A1A;
+    color:white;
+}
+#TeamFortress2 .panel-heading{
+    background-color: #E39309;
+    color:white;
+}
+#Terraria .panel-heading{
+    background-color: #37A106;
+    color:white;
+}
+#TombRaider .panel-heading{
+    background-color: #78B7A9;
+    color:white;
+}
+#SonicMania .panel-heading{
+    background-color: #222FFE;
+    color:white;
+}
+#Starbound .panel-heading{
+    background-color: #FE9722;
+    color:white;
+}
+#Sims3 .panel-heading{
+    background-color: #65E019;
+    color:white;
+}
+#Rime .panel-heading{
+    background-color: #198CE0;
+    color:white;
+}
+#RememberMe .panel-heading{
+    background-color: #EF9924;
+    color:white;
+}
+#RogueLegacy .panel-heading{
+    background-color: #EF2424;
+    color:white;
+}
+#Portal2 .panel-heading{
+    background-color: #FF9E00;
+    color:white;
+}
+#QuadrilateralCowboy .panel-heading{
+    background-color: #F000FF;
+    color:white;
+}
+#PlagueInc .panel-heading{
+    background-color: #FF0000;
+    color:white;
+}
+#Qube .panel-heading{
+    background-color: #DBD2CB;
+    color:white;
+}
+#Pubg .panel-heading{
+    background-color: #F9F32E;
+    color:white;
+}
+#Quake4 .panel-heading{
+    background-color: #936708;
+    color:white;
+}
+#Nba2k18 .panel-heading{
+    background-color: #1D74B8;
+    color:white;
+}
+#NiNoKuni2 .panel-heading{
+    background-color: #E0843C;
+    color:white;
+}
+#Outlast2 .panel-heading{
+    background-color: #A8F557;
+    color:white;
+}
+#NierAutomata .panel-heading{
+    background-color: #B29B68;
+    color:white;
+}
+#Onimusha3DS .panel-heading{
+    background-color: #DD3E31;
+    color:white;
+}
+#OxygenNotIncluded .panel-heading{
+    background-color: #936708;
+    color:white;
+}
+
 
 .gameRating {
   width: 200px;
